@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+"""Amulet tests on a basic congress deployment on xenial-ocata.
+"""
+
+from basic_deployment import CongressBasicDeployment
+
+if __name__ == '__main__':
+    deployment = CongressBasicDeployment(
+        series='xenial',
+        openstack='cloud:xenial-pike',
+        source='cloud:xenial-updates/pike')
+    deployment.run_tests()

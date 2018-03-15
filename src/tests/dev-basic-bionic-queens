@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+
+"""Amulet tests on a basic congress deployment on bionic-queens.
+"""
+
+from basic_deployment import CongressBasicDeployment
+
+if __name__ == '__main__':
+    deployment = CongressBasicDeployment(series='bionic')
+    deployment.run_tests()

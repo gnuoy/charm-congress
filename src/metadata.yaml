@@ -1,0 +1,21 @@
+name: congress
+summary: OpenStack Policy as a service
+maintainer: OpenStack Charmers <openstack-charmers@lists.ubuntu.com>
+description: |
+ Congress is an OpenStack project to provide policy as a service across any
+ collection of cloud services in order to offer governance and compliance for
+ dynamic infrastructures.
+tags:
+  - openstack
+series:
+  - xenial
+  - bionic
+  - artful
+subordinate: false
+requires:
+  shared-db:
+    interface: mysql-shared
+  amqp:
+    interface: rabbitmq
+  identity-service:
+    interface: keystone
